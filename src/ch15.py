@@ -14,6 +14,7 @@ def _():
 def _():
     import numpy as np
     import matplotlib.pyplot as plt
+    import japanize_matplotlib
 
     def simulate_poisson_process(rate, T):
         """
@@ -45,7 +46,7 @@ def _():
     plt.yticks([])
     plt.title('ポワソン過程のシミュレーション (λ=5)')
     plt.show()
-    return events, np, plt, simulate_poisson_process
+    return events, japanize_matplotlib, np, plt, simulate_poisson_process
 
 
 @app.cell
